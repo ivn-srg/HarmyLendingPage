@@ -10,8 +10,11 @@ import firstAidKit from "./assets/svgs/firstAidKit.svg";
 import addInfo from "./assets/svgs/addInfo.svg";
 import downArrow from "./assets/svgs/downArrow.svg";
 import userAvatar from "./assets/userAvatar.png";
+import articleImage1 from "./assets/ImageOfCard1.png";
+import articleImage2 from "./assets/ImageOfCard2.png";
+import articleImage3 from "./assets/ImageOfCard3.png";
 
-const data = [
+const servicesData = [
   {
     icon: magnifier,
     title: "Search doctor",
@@ -45,12 +48,12 @@ const data = [
 ];
 
 interface CardProps {
-  icon: string; // Или замените React.ReactNode на конкретный тип вашей иконки
+  icon: string;
   title: string;
   text: string;
 }
 
-const Card: React.FC<CardProps> = ({ icon, title, text }) => (
+const SeriviceCard: React.FC<CardProps> = ({ icon, title, text }) => (
   <div className={classes.card}>
     {icon && <img src={icon} className={classes.icon} alt="icon" />}
     <h3 className={classes.serviceCardTitle}>{title}</h3>
@@ -58,18 +61,80 @@ const Card: React.FC<CardProps> = ({ icon, title, text }) => (
   </div>
 );
 
-// interface CardGridProps {
-//   data: Array<{ icon: React.ReactNode; title: string; text: string }>;
-// }
-// Обновите интерфейс CardGridProps
 interface CardGridProps {
-  data: Array<CardProps>; // Теперь data содержит объекты типа CardProps
+  data: Array<CardProps>;
 }
 
 const CardGrid: React.FC<CardGridProps> = ({ data }) => (
   <div className={classes.cardGrid}>
     {data.map((item, index) => (
-      <Card key={index} {...item} />
+      <SeriviceCard key={index} {...item} />
+    ))}
+  </div>
+);
+
+const articlesData = [
+  {
+    image: articleImage1,
+    title: "Disease detection, check up in the laboratory",
+    text: "In this case, the role of the health laboratory is very important to do a disease detection...",
+  },
+  {
+    image: articleImage2,
+    title: "Herbal medicines that are safe for consumption",
+    text: "Herbal medicine is very widely used at this time because of its very good for your health...",
+  },
+  {
+    image: articleImage3,
+    title: "Natural care for healthy facial skin",
+    text: "A healthy lifestyle should start from now and also for your skin health. There are some...",
+  },
+  {
+    image: articleImage1,
+    title: "Disease detection, check up in the laboratory",
+    text: "In this case, the role of the health laboratory is very important to do a disease detection...",
+  },
+  {
+    image: articleImage2,
+    title: "Herbal medicines that are safe for consumption",
+    text: "Herbal medicine is very widely used at this time because of its very good for your health...",
+  },
+  {
+    image: articleImage3,
+    title: "Natural care for healthy facial skin",
+    text: "A healthy lifestyle should start from now and also for your skin health. There are some...",
+  },
+];
+
+interface ArticleCardProps {
+  image: string;
+  title: string;
+  text: string;
+}
+
+const ArticleCard: React.FC<ArticleCardProps> = ({ image, title, text }) => (
+  <div className={classes.articleCard}>
+    {image && <img src={image} className={classes.articleImage} alt="image" />}
+    <div className={classes.articleCardContent}>
+      <div className={classes.articleCardText}>
+        <h3 className={classes.articleCardTitle}>{title}</h3>
+        <p className={classes.articleCardSubtitle}>{text}</p>
+      </div>
+      <a href="#" className={classes.readMoreBtn}>
+        Read More
+      </a>
+    </div>
+  </div>
+);
+
+interface ArticleCardGridProps {
+  data: Array<ArticleCardProps>;
+}
+
+const ArticleCardGrid: React.FC<ArticleCardGridProps> = ({ data }) => (
+  <div className={classes.cardGrid}>
+    {data.map((item, index) => (
+      <ArticleCard key={index} {...item} />
     ))}
   </div>
 );
@@ -131,7 +196,7 @@ function App() {
               qualified doctors you can consult with us which type of service is
               suitable for your health
             </p>
-            <CardGrid data={data} />
+            <CardGrid data={servicesData} />
           </div>
 
           <div className={classes.thirdSection}>
@@ -186,7 +251,7 @@ function App() {
                   <div className={classes.avatarContainer}>
                     <img src={userAvatar} className={classes.userAvatar} />
                   </div>
-                  <div>
+                  <div className={classes.userTextInfo}>
                     <p className={classes.userName}>Edward Newgate</p>
                     <p className={classes.userPosition}>Founder Circle</p>
                   </div>
@@ -199,6 +264,14 @@ function App() {
               </div>
             </div>
             <div className={classes.pager}></div>
+          </div>
+
+          <div className={classes.sixSection}>
+            <h1 className={classes.sixSectionTitle}>
+              Check out our latest article
+            </h1>
+            <div className={classes.delimeter}></div>
+            <ArticleCardGrid data={articlesData} />
           </div>
         </div>
         <footer className={classes.footer}></footer>

@@ -144,7 +144,7 @@ body {
 
 .secondSection {
   justify-items: center;
-  /* width: 90%; */
+  display: inherit;
   margin: 1% 5%;
 }
 
@@ -156,6 +156,7 @@ body {
   font-style: normal;
   font-weight: 700;
   line-height: 56px; /* 155.556% */
+  margin-block: 0;
 }
 
 .secondSectionSubtitle {
@@ -165,7 +166,9 @@ body {
   font-size: 18px;
   font-style: normal;
   font-weight: 300;
-  line-height: 30px; /* 166.667% */
+  line-height: 30px;
+  margin-block: 0;
+  margin-bottom: 5%;
 }
 
 .delimeter {
@@ -334,10 +337,10 @@ body {
 }
 
 .slide {
-  padding: 60px 120px;
+  padding: 64px 118px;
   text-align: center;
-  height: 430px;
-  width: 80%;
+  height: 350px;
+  width: 65%;
   border-radius: 24px;
   background: linear-gradient(208deg, #67c3f3 9.05%, #5a98f2 76.74%);
 }
@@ -349,6 +352,7 @@ body {
   font-style: normal;
   font-weight: 700;
   line-height: 48px; /* 133.333% */
+  margin-block: 0;
 }
 
 .delimeterSlider {
@@ -359,16 +363,18 @@ body {
   flex-shrink: 0;
   border-radius: 5px;
   background: #fff;
+  display: inline-block;
+  margin-block: 0;
 }
 
 .slideContent {
-  flex: 1;
+  margin: 8% 0px;
   justify-content: center;
   text-align: left;
   display: flex;
   flex-direction: row;
   align-items: center;
-  border: 1px solid black;
+  /* border: 1px solid black; */
 }
 
 .userInfo {
@@ -380,7 +386,7 @@ body {
   width: 145px; /* Задайте ширину по вашему усмотрению */
   height: 145px; /* Задайте высоту по вашему усмотрению */
   overflow: hidden; /* Обрежьте изображение внутри контейнера */
-  border: 2px solid white; /* Добавьте белую обводку */
+  border: 4px solid white; /* Добавьте белую обводку */
   border-radius: 50%;
   margin-right: 2em;
 }
@@ -393,6 +399,10 @@ body {
   display: block;
 }
 
+.userTextInfo {
+  align-self: center;
+}
+
 .userName {
   margin-block: 0px;
   color: #fff;
@@ -400,7 +410,7 @@ body {
   font-size: 22px;
   font-style: normal;
   font-weight: 700;
-  line-height: 48px; /* 218.182% */
+  line-height: 35px; /* 218.182% */
 }
 
 .userPosition {
@@ -410,7 +420,7 @@ body {
   font-size: 18px;
   font-style: normal;
   font-weight: 400;
-  line-height: 48px; /* 266.667% */
+  line-height: 30px; /* 266.667% */
 }
 
 .slideReview {
@@ -421,6 +431,74 @@ body {
   font-style: normal;
   font-weight: 400;
   line-height: 30px; /* 157.895% */
+}
+
+.sixSection {
+  justify-items: center;
+  display: inherit;
+  margin: 1% 5%;
+}
+
+.sixSectionTitle {
+  text-align: center;
+  color: #000;
+  font-family: Mulish;
+  font-size: 36px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 56px; /* 155.556% */
+  margin-block: 0;
+}
+
+.articleCard {
+  width: 320px;
+  height: 500px;
+  border-radius: 20px;
+  background: #fff;
+  /* drop shadow */
+  box-shadow: 10px 40px 50px 0px rgba(229, 233, 246, 0.4);
+  overflow: hidden;
+}
+
+.articleImage {
+  width: 100%;
+  height: 40%;
+}
+
+.articleCardContent {
+}
+
+.articleCardText {
+  margin: 0px 33px;
+}
+
+.articleCardTitle {
+  color: #000;
+  font-family: Mulish;
+  font-size: 21px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 32px; /* 152.381% */
+}
+
+.articleCardSubtitle {
+  color: #7d7987;
+  font-family: Mulish;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: 28px; /* 175% */
+}
+
+.readMoreBtn {
+  margin: 0px 33px;
+  text-decoration: none;
+  color: #4089ed;
+  font-family: Mulish;
+  font-size: 17px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 28px; /* 164.706% */
 }
 
 footer {

@@ -1,3 +1,13 @@
+@font-face {
+  font-family: "MulishRegular";
+  src: url("./fonts/MulishRegular.ttf");
+}
+
+@font-face {
+  font-family: "MulishLight";
+  src: url("./fonts/MulishLight.ttf");
+}
+
 #root {
   background-color: aliceblue;
 }
@@ -44,6 +54,7 @@ body {
   background-color: #458ff6;
   width: 41px;
   height: 41px;
+  font-family: "MulishRegular";
   display: inherit;
   margin-right: 1em;
 }
@@ -51,7 +62,7 @@ body {
 .logoSymbol {
   text-align: center;
   color: white;
-  /* font-family: Mulish; */
+  font-family: MulishRegular;
   font-size: 26px;
   font-style: normal;
   font-weight: 700;
@@ -60,8 +71,8 @@ body {
 }
 
 .logoText {
-  color: #233348;
-  font-family: Mulish;
+  color: #000;
+  font-family: "MulishRegular";
   font-size: 24px;
   font-style: normal;
   font-weight: 700;
@@ -78,13 +89,18 @@ body {
   color: #000;
   text-decoration: none;
   background-color: none;
+  font-family: MulishRegular;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
 }
 
 .navItem {
-  padding-left: 1rem;
+  padding-left: 2em;
   text-decoration: none;
   color: rgba(0, 0, 0, 0.5);
-  font-family: Mulish;
+  font-family: MulishRegular;
   font-size: 18px;
   font-style: normal;
   font-weight: 400;
@@ -106,7 +122,7 @@ body {
 
 .firstSectionTitle {
   color: #000;
-  font-family: Mulish;
+  font-family: "MulishRegular";
   font-size: 48px;
   font-style: normal;
   font-weight: 700;
@@ -115,8 +131,7 @@ body {
 
 .firstSectionSubtitle {
   color: #7d7987;
-
-  font-family: Mulish;
+  font-family: "MulishRegular";
   font-size: 21px;
   font-style: normal;
   font-weight: 300;
@@ -129,6 +144,7 @@ body {
   height: 56px;
   border-radius: 55px;
   background: #458ff6;
+  font-family: "MulishRegular";
   border: 0px;
   color: #fff;
   font-family: Mulish;
@@ -151,7 +167,7 @@ body {
 .secondSectionTitle {
   text-align: center;
   color: #000;
-  font-family: Mulish;
+  font-family: "MulishRegular";
   font-size: 36px;
   font-style: normal;
   font-weight: 700;
@@ -162,7 +178,7 @@ body {
 .secondSectionSubtitle {
   color: #7d7987;
   text-align: center;
-  font-family: Mulish;
+  font-family: "MulishLight";
   font-size: 18px;
   font-style: normal;
   font-weight: 300;
@@ -203,7 +219,7 @@ body {
 
 .serviceCardTitle {
   color: #000;
-  font-family: Mulish;
+  font-family: "MulishRegular";
   font-size: 24px;
   font-style: normal;
   font-weight: 700;
@@ -214,7 +230,7 @@ body {
 
 .serviceCardSubtitle {
   color: #7d7987;
-  font-family: Mulish;
+  font-family: "MulishLight";
   font-size: 16px;
   font-style: normal;
   font-weight: 300;
@@ -238,7 +254,7 @@ body {
 
 .thirdSectionTitle {
   color: #000;
-  font-family: Mulish;
+  font-family: "MulishRegular";
   font-size: 48px;
   font-style: normal;
   font-weight: 700;
@@ -247,8 +263,7 @@ body {
 
 .thirdSectionSubtitle {
   color: #7d7987;
-
-  font-family: Mulish;
+  font-family: "MulishLight";
   font-size: 21px;
   font-style: normal;
   font-weight: 300;
@@ -262,7 +277,7 @@ body {
   border-radius: 55px;
   background: #fff;
   color: #458ff6;
-  font-family: Mulish;
+  font-family: "MulishRegular";
   font-size: 18px;
   font-style: normal;
   font-weight: 700;
@@ -290,7 +305,7 @@ body {
 
 .fourthSectionTitle {
   color: #000;
-  font-family: Mulish;
+  font-family: "MulishRegular";
   font-size: 48px;
   font-style: normal;
   font-weight: 700;
@@ -299,8 +314,7 @@ body {
 
 .fourthSectionSubtitle {
   color: #7d7987;
-
-  font-family: Mulish;
+  font-family: "MulishLight";
   font-size: 21px;
   font-style: normal;
   font-weight: 300;
@@ -348,7 +362,7 @@ body {
 
 .sliderTitle {
   color: #fff;
-  font-family: Mulish;
+  font-family: "MulishRegular";
   font-size: 36px;
   font-style: normal;
   font-weight: 700;
@@ -384,19 +398,19 @@ body {
 }
 
 .avatarContainer {
-  width: 145px; /* Задайте ширину по вашему усмотрению */
-  height: 145px; /* Задайте высоту по вашему усмотрению */
-  overflow: hidden; /* Обрежьте изображение внутри контейнера */
-  border: 4px solid white; /* Добавьте белую обводку */
+  width: 145px;
+  height: 145px;
+  overflow: hidden;
+  border: 4px solid white;
   border-radius: 50%;
   margin-right: 2em;
 }
 
 .userAvatar {
   width: 105%;
-  height: 107%; /* 100% высоты для изображения внутри контейнера */
-  object-fit: cover; /* Сохранить пропорции и обрезать изображение */
-  object-position: center center; /* Центрировать изображение внутри контейнера */
+  height: 107%;
+  object-fit: cover;
+  object-position: center center;
   display: block;
 }
 
@@ -407,7 +421,7 @@ body {
 .userName {
   margin-block: 0px;
   color: #fff;
-  font-family: Mulish;
+  font-family: "MulishRegular";
   font-size: 22px;
   font-style: normal;
   font-weight: 700;
@@ -417,7 +431,7 @@ body {
 .userPosition {
   margin-block: 0px;
   color: rgba(255, 255, 255, 0.85);
-  font-family: Mulish;
+  font-family: "MulishLight";
   font-size: 18px;
   font-style: normal;
   font-weight: 400;
@@ -427,7 +441,7 @@ body {
 .slideReview {
   width: 50%;
   color: rgba(255, 255, 255, 0.9);
-  font-family: Mulish;
+  font-family: "MulishLight";
   font-size: 19px;
   font-style: normal;
   font-weight: 400;
@@ -443,7 +457,7 @@ body {
 .sixSectionTitle {
   text-align: center;
   color: #000;
-  font-family: Mulish;
+  font-family: "MulishRegular";
   font-size: 36px;
   font-style: normal;
   font-weight: 700;
@@ -483,7 +497,7 @@ body {
 
 .articleCardTitle {
   color: #000;
-  font-family: Mulish;
+  font-family: "MulishRegular";
   font-size: 21px;
   font-style: normal;
   font-weight: 700;
@@ -492,7 +506,7 @@ body {
 
 .articleCardSubtitle {
   color: #7d7987;
-  font-family: Mulish;
+  font-family: "MulishLight";
   font-size: 16px;
   font-style: normal;
   font-weight: 300;
@@ -503,7 +517,7 @@ body {
   margin: 0px 33px;
   text-decoration: none;
   color: #4089ed;
-  font-family: Mulish;
+  font-family: "MulishRegular";
   font-size: 17px;
   font-style: normal;
   font-weight: 600;
@@ -521,7 +535,7 @@ body {
   border-radius: 55px;
   background: #fff;
   color: #458ff6;
-  font-family: Mulish;
+  font-family: "MulishRegular";
   font-size: 18px;
   font-style: normal;
   font-weight: 700;
@@ -566,7 +580,7 @@ footer {
 .footerLogoSymbol {
   text-align: center;
   color: #5b9bf3;
-  /* font-family: Mulish; */
+  font-family: "MulishRegular";
   font-size: 26px;
   font-style: normal;
   font-weight: 700;
@@ -576,7 +590,7 @@ footer {
 
 .footerLogoText {
   color: #fff;
-  font-family: Mulish;
+  font-family: "MulishRegular";
   font-size: 24px;
   font-style: normal;
   font-weight: 700;
@@ -585,7 +599,7 @@ footer {
 
 .describtionCompany {
   color: #fff;
-  font-family: Mulish;
+  font-family: "MulishLight";
   font-size: 18px;
   font-style: normal;
   font-weight: 300;
@@ -594,7 +608,7 @@ footer {
 
 .rightResrved {
   color: #fff;
-  font-family: Mulish;
+  font-family: "MulishLight";
   font-size: 16px;
   font-style: normal;
   font-weight: 300;
@@ -611,7 +625,7 @@ footer {
 
 .footerBlockTitle {
   color: #fff;
-  font-family: Mulish;
+  font-family: "MulishRegular";
   font-size: 20px;
   font-style: normal;
   font-weight: 700;
@@ -621,17 +635,11 @@ footer {
 .footerNavItem {
   text-decoration: none;
   color: #fff;
-  font-family: Mulish;
+  font-family: "MulishLight";
   font-size: 18px;
   font-style: normal;
   font-weight: 300;
   line-height: 35px; /* 211.111% */
-}
-
-.footerRegionNavBlock {
-}
-
-.footerHelpNavBlock {
 }
 
 /* .logo {

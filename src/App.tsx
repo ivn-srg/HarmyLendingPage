@@ -1,7 +1,14 @@
+import React, { useState } from "react";
 import classes from "./App.module.css";
+
 import firstSectionImage from "./assets/headerImg.png";
 import secondSectionImage from "./assets/thirdSectionImage.png";
 import fourthSectionImage from "./assets/fourSectionImage.png";
+import articleImage1 from "./assets/ImageOfCard1.png";
+import articleImage2 from "./assets/ImageOfCard2.png";
+import articleImage3 from "./assets/ImageOfCard3.png";
+import userAvatar from "./assets/userAvatar.png";
+
 import magnifier from "./assets/svgs/magnifier.svg";
 import jar from "./assets/svgs/jar.svg";
 import tablet from "./assets/svgs/tablet.svg";
@@ -10,11 +17,6 @@ import firstAidKit from "./assets/svgs/firstAidKit.svg";
 import addInfo from "./assets/svgs/addInfo.svg";
 import downArrow from "./assets/svgs/downArrow.svg";
 import rightArrow from "./assets/svgs/arrowRight.svg";
-import userAvatar from "./assets/userAvatar.png";
-import articleImage1 from "./assets/ImageOfCard1.png";
-import articleImage2 from "./assets/ImageOfCard2.png";
-import articleImage3 from "./assets/ImageOfCard3.png";
-import React, { useState } from "react";
 
 const servicesData = [
   {

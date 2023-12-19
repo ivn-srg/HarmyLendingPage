@@ -169,6 +169,7 @@ body {
   line-height: 30px;
   margin-block: 0;
   margin-bottom: 5%;
+  margin-inline: 7%;
 }
 
 .delimeter {
@@ -465,6 +466,14 @@ body {
   height: 40%;
 }
 
+.articleCardGridContainer {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  margin: 3% 0px;
+}
+
 .articleCardContent {
 }
 
@@ -501,12 +510,128 @@ body {
   line-height: 28px; /* 164.706% */
 }
 
+.readMoreArrow {
+  margin-inline: 2%;
+}
+
+.showMoreBtn {
+  margin: 6% 0px;
+  width: 200px;
+  height: 56px;
+  border-radius: 55px;
+  background: #fff;
+  color: #458ff6;
+  font-family: Mulish;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 60px; /* 333.333% */
+  border: 1.4px solid #458ff6;
+}
+
 footer {
   background: linear-gradient(183deg, #67c3f3 -8.57%, #5a98f2 82.96%);
   /* width: 1600px; */
-  margin-top: 40em;
-  height: 432px;
+  margin-top: 50em;
   flex-shrink: 0;
+  padding: 115px 180px;
+}
+
+.footerContent {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.footerCompanyInfo {
+  width: 30%;
+}
+
+.footerlogoDiv {
+  display: inline-flex;
+  align-items: center;
+}
+
+.footerLogo {
+  align-items: center;
+  border-radius: 50%;
+  justify-content: center;
+  background-color: #fff;
+  width: 41px;
+  height: 41px;
+  display: inherit;
+  margin-right: 1em;
+}
+
+.footerLogoSymbol {
+  text-align: center;
+  color: #5b9bf3;
+  /* font-family: Mulish; */
+  font-size: 26px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  display: inline;
+}
+
+.footerLogoText {
+  color: #fff;
+  font-family: Mulish;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+
+.describtionCompany {
+  color: #fff;
+  font-family: Mulish;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: 28px; /* 155.556% */
+}
+
+.rightResrved {
+  color: #fff;
+  font-family: Mulish;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: 28px; /* 175% */
+}
+
+.footerCompanyNavBlock {
+}
+
+.footerNavMenu {
+  display: flex;
+  flex-direction: column;
+}
+
+.footerBlockTitle {
+  color: #fff;
+  font-family: Mulish;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 60px; /* 300% */
+}
+
+.footerNavItem {
+  text-decoration: none;
+  color: #fff;
+  font-family: Mulish;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: 35px; /* 211.111% */
+}
+
+.footerRegionNavBlock {
+}
+
+.footerHelpNavBlock {
 }
 
 /* .logo {

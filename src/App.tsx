@@ -9,10 +9,12 @@ import tests from "./assets/svgs/test.svg";
 import firstAidKit from "./assets/svgs/firstAidKit.svg";
 import addInfo from "./assets/svgs/addInfo.svg";
 import downArrow from "./assets/svgs/downArrow.svg";
+import rightArrow from "./assets/svgs/arrowRight.svg";
 import userAvatar from "./assets/userAvatar.png";
 import articleImage1 from "./assets/ImageOfCard1.png";
 import articleImage2 from "./assets/ImageOfCard2.png";
 import articleImage3 from "./assets/ImageOfCard3.png";
+import React, { useState } from "react";
 
 const servicesData = [
   {
@@ -121,7 +123,7 @@ const ArticleCard: React.FC<ArticleCardProps> = ({ image, title, text }) => (
         <p className={classes.articleCardSubtitle}>{text}</p>
       </div>
       <a href="#" className={classes.readMoreBtn}>
-        Read More
+        Read more <img src={rightArrow} className={classes.readMoreArrow} />
       </a>
     </div>
   </div>
@@ -131,13 +133,28 @@ interface ArticleCardGridProps {
   data: Array<ArticleCardProps>;
 }
 
-const ArticleCardGrid: React.FC<ArticleCardGridProps> = ({ data }) => (
-  <div className={classes.cardGrid}>
-    {data.map((item, index) => (
-      <ArticleCard key={index} {...item} />
-    ))}
-  </div>
-);
+const ArticleCardGrid: React.FC<ArticleCardGridProps> = ({ data }) => {
+  const [isFullGrid, setIsFullGrid] = useState(false);
+
+  const toggleGrid = () => {
+    setIsFullGrid((prev) => !prev);
+  };
+
+  const visibleData = isFullGrid ? data : data.slice(0, 3);
+
+  return (
+    <div className={classes.articleCardGridContainer}>
+      <div className={classes.cardGrid}>
+        {visibleData.map((item, index) => (
+          <ArticleCard key={index} {...item} />
+        ))}
+      </div>
+      <button onClick={toggleGrid} className={classes.showMoreBtn}>
+        {isFullGrid ? "Hide" : "View all"}
+      </button>
+    </div>
+  );
+};
 
 function App() {
   return (
@@ -274,7 +291,76 @@ function App() {
             <ArticleCardGrid data={articlesData} />
           </div>
         </div>
-        <footer className={classes.footer}></footer>
+        <footer className={classes.footer}>
+          <div className={classes.footerContent}>
+            <div className={classes.footerCompanyInfo}>
+              <div className={classes.footerlogoDiv}>
+                <div className={classes.footerLogo}>
+                  <p className={classes.footerLogoSymbol}>T</p>
+                </div>
+                <p className={classes.footerLogoText}>HealthCare</p>
+              </div>
+              <p className={classes.describtionCompany}>
+                HealthCare provides progressive, and affordable healthcare,
+                accessible on mobile and online for everyone
+              </p>
+              <p className={classes.rightResrved}>
+                ©HealthCare PTY LTD 2023. All rights reserved
+              </p>
+            </div>
+            <div className={classes.footerCompanyNavBlock}>
+              <h1 className={classes.footerBlockTitle}>Company</h1>
+              <nav className={classes.footerNavMenu}>
+                <a className={classes.footerNavItem} href="#">
+                  About
+                </a>
+                <a className={classes.footerNavItem} href="#">
+                  Testimonials
+                </a>
+                <a className={classes.footerNavItem} href="#">
+                  Find a doctor
+                </a>
+                <a className={classes.footerNavItem} href="#">
+                  Apps
+                </a>
+              </nav>
+            </div>
+            <div className={classes.footerRegionNavBlock}>
+              <h1 className={classes.footerBlockTitle}>Region</h1>
+              <nav className={classes.footerNavMenu}>
+                <a className={classes.footerNavItem} href="#">
+                  Indonesia
+                </a>
+                <a className={classes.footerNavItem} href="#">
+                  Singapore
+                </a>
+                <a className={classes.footerNavItem} href="#">
+                  Hongkong
+                </a>
+                <a className={classes.footerNavItem} href="#">
+                  Canada
+                </a>
+              </nav>
+            </div>
+            <div className={classes.footerHelpNavBlock}>
+              <h1 className={classes.footerBlockTitle}>Help</h1>
+              <nav className={classes.footerNavMenu}>
+                <a className={classes.footerNavItem} href="#">
+                  Help center
+                </a>
+                <a className={classes.footerNavItem} href="#">
+                  Contact support
+                </a>
+                <a className={classes.footerNavItem} href="#">
+                  Instructions
+                </a>
+                <a className={classes.footerNavItem} href="#">
+                  How it works
+                </a>
+              </nav>
+            </div>
+          </div>
+        </footer>
       </div>
     </>
   );

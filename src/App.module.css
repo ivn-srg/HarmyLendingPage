@@ -23,14 +23,16 @@ body {
   display: block;
   margin: 0px;
   align-self: center;
+  overflow-x: hidden;
 }
 
 .mainDiv {
   justify-content: center;
   align-self: center;
   margin: 0% 5%;
-  gap: 3%;
   display: grid;
+  position: relative;
+  z-index: 1;
 }
 
 .header {
@@ -112,6 +114,8 @@ body {
   justify-content: space-between;
   width: 100%;
   gap: 10em;
+  margin-top: 5%;
+  margin-bottom: 15%;
 }
 
 .firstSectionTitle {
@@ -155,6 +159,7 @@ body {
   justify-items: center;
   display: inherit;
   margin: 1% 5%;
+  margin-bottom: 15%;
 }
 
 .secondSectionTitle {
@@ -194,6 +199,7 @@ body {
   display: grid;
   grid-template-columns: repeat(3, minmax(20em, 1fr));
   gap: 40px;
+  margin-bottom: 2%;
 }
 
 .card {
@@ -234,6 +240,7 @@ body {
   align-items: center;
   justify-content: space-between;
   width: 100%;
+  margin-bottom: 15%;
 }
 
 .thirdSectionContent {
@@ -284,6 +291,7 @@ body {
   align-items: center;
   justify-content: space-between;
   width: 100%;
+  margin-bottom: 15%;
 }
 
 .fourthSectionContent {
@@ -340,6 +348,7 @@ body {
   display: flex;
   flex-direction: column;
   width: 100%;
+  margin-bottom: 15%;
 }
 
 .slide {
@@ -483,6 +492,7 @@ body {
   justify-items: center;
   display: inherit;
   margin: 1% 5%;
+  margin-bottom: 15%;
 }
 
 .sixSectionTitle {
@@ -563,7 +573,7 @@ body {
 }
 
 .showMoreBtn {
-  margin: 6% 0px;
+  margin-top: 6%;
   width: 200px;
   height: 56px;
   border-radius: 55px;
@@ -579,9 +589,9 @@ body {
 
 footer {
   background: linear-gradient(183deg, #67c3f3 -8.57%, #5a98f2 82.96%);
-  margin-top: 50em;
   flex-shrink: 0;
   padding: 100px 180px;
+  overflow: hidden;
 }
 
 .footerContent {
@@ -670,4 +680,72 @@ footer {
   font-style: normal;
   font-weight: 300;
   line-height: 35px;
+}
+
+.backgroundImage {
+  position: absolute;
+  object-fit: cover;
+  z-index: -1;
+  overflow: hidden;
+}
+
+.firstSectionBGMatrix {
+  margin-top: 160px;
+  margin-left: -50px;
+}
+
+.secondSectionBGSky {
+  margin-top: 73%;
+  margin-left: -3%;
+  width: 50%;
+}
+
+.secondSectionBGMatrix {
+  right: 0px;
+  margin-top: 31em;
+  width: 10%;
+}
+
+.thirdSectionBGMatrix {
+  right: -10%;
+  width: 10%;
+  margin-top: 12%;
+}
+
+.fiveSectionBGMatrix1 {
+  margin-top: -1%;
+  right: 5%;
+  z-index: 0;
+  width: 11%;
+}
+
+.fiveSectionBGMatrix2 {
+  left: 5%;
+  margin-top: 20%;
+  z-index: -1;
+  width: 11%;
+}
+
+.sixSectionBGSky {
+  margin-left: 80%;
+  margin-top: 5%;
+  width: 36%;
+}
+
+.sixSectionBGMatrix {
+  left: 9%;
+  margin-top: 7%;
+  width: 10%;
+}
+
+.footerBGMatrix1 {
+  left: -1%;
+  margin-top: 14%;
+  z-index: 0;
+}
+
+.footerBGMatrix2 {
+  right: 5%;
+  margin-top: -11%;
+  width: 10%;
 }

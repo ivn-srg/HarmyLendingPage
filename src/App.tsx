@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import classes from "./App.module.css";
+import clsx from "clsx";
 
 import firstSectionImage from "./assets/headerImg.png";
 import secondSectionImage from "./assets/thirdSectionImage.png";
@@ -18,7 +19,10 @@ import addInfo from "./assets/svgs/addInfo.svg";
 import downArrow from "./assets/svgs/downArrow.svg";
 import rightArrow from "./assets/svgs/arrowRight.svg";
 import sky from "./assets/svgs/sky.svg";
+import skyRight from "./assets/svgs/skyRight.svg";
 import pointMatrix from "./assets/svgs/pointMatrix.svg";
+import pointMatrixWhite from "./assets/svgs/pointMatrixWhite.svg";
+import pointMatrixLess from "./assets/svgs/pointMatrixLess.svg";
 
 const servicesData = [
   {
@@ -332,6 +336,18 @@ function App() {
   return (
     <>
       <div>
+        <img
+          src={pointMatrix}
+          className={clsx(
+            classes.backgroundImage,
+            classes.firstSectionBGMatrix
+          )}
+        />
+        <img
+          src={sky}
+          className={clsx(classes.backgroundImage, classes.secondSectionBGSky)}
+        />
+
         <div className={classes.mainDiv}>
           <header className={classes.header}>
             <div className={classes.logoDiv}>
@@ -385,7 +401,16 @@ function App() {
               qualified doctors you can consult with us which type of service is
               suitable for your health
             </p>
+
+            <img
+              src={pointMatrix}
+              className={clsx(
+                classes.backgroundImage,
+                classes.secondSectionBGMatrix
+              )}
+            />
             <CardGrid data={servicesData} />
+            <button className={classes.thirdSectionBtn}>Learn more</button>
           </div>
 
           <div className={classes.thirdSection}>
@@ -404,6 +429,13 @@ function App() {
                 take pride in the solutions we deliver
               </p>
               <button className={classes.thirdSectionBtn}>Learn more</button>
+              <img
+                src={pointMatrix}
+                className={clsx(
+                  classes.backgroundImage,
+                  classes.thirdSectionBGMatrix
+                )}
+              />
             </div>
           </div>
 
@@ -431,6 +463,20 @@ function App() {
 
           <div className={classes.fiveSection}>
             <Slider slidesData={slidesData} activeSlide={activeSlide} />
+            <img
+              src={pointMatrixWhite}
+              className={clsx(
+                classes.backgroundImage,
+                classes.fiveSectionBGMatrix1
+              )}
+            />
+            <img
+              src={pointMatrix}
+              className={clsx(
+                classes.backgroundImage,
+                classes.fiveSectionBGMatrix2
+              )}
+            />
             <Pager
               totalSlides={slidesData.length}
               activeSlide={activeSlide}
@@ -443,10 +489,31 @@ function App() {
               Check out our latest article
             </h1>
             <div className={classes.delimeter}></div>
+
+            <img
+              src={pointMatrix}
+              className={clsx(
+                classes.backgroundImage,
+                classes.sixSectionBGMatrix
+              )}
+            />
+            <img
+              src={skyRight}
+              className={clsx(classes.backgroundImage, classes.sixSectionBGSky)}
+            />
             <ArticleCardGrid data={articlesData} />
           </div>
         </div>
+
         <footer className={classes.footer}>
+          <img
+            src={pointMatrixLess}
+            className={clsx(classes.backgroundImage, classes.footerBGMatrix1)}
+          />
+          <img
+            src={pointMatrix}
+            className={clsx(classes.backgroundImage, classes.footerBGMatrix2)}
+          />
           <div className={classes.footerContent}>
             <div className={classes.footerCompanyInfo}>
               <div className={classes.footerlogoDiv}>

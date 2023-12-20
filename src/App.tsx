@@ -1,4 +1,4 @@
-import React, { useReducer, useState } from "react";
+import React, { useState } from "react";
 import classes from "./App.module.css";
 
 import firstSectionImage from "./assets/headerImg.png";
@@ -17,7 +17,8 @@ import firstAidKit from "./assets/svgs/firstAidKit.svg";
 import addInfo from "./assets/svgs/addInfo.svg";
 import downArrow from "./assets/svgs/downArrow.svg";
 import rightArrow from "./assets/svgs/arrowRight.svg";
-import leftArrow from "./assets/svgs/leftArrow.svg";
+import sky from "./assets/svgs/sky.svg";
+import pointMatrix from "./assets/svgs/pointMatrix.svg";
 
 const servicesData = [
   {

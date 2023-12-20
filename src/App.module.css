@@ -13,10 +13,6 @@
   src: url("./fonts/MulishExtraLight.ttf");
 }
 
-#root {
-  background-color: aliceblue;
-}
-
 body {
   width: 100%;
   align-content: center;
@@ -30,7 +26,6 @@ body {
 }
 
 .mainDiv {
-  /* border: 1px solid black; */
   justify-content: center;
   align-self: center;
   margin: 0% 5%;
@@ -39,7 +34,6 @@ body {
 }
 
 .header {
-  /* border: 1px solid black; */
   display: inline-flex;
   width: 100%;
   justify-content: space-between;
@@ -85,7 +79,6 @@ body {
 }
 
 .navMenu {
-  /* border: 1px solid black; */
   justify-content: space-between;
 }
 
@@ -104,7 +97,7 @@ body {
 .navItem {
   padding-left: 2em;
   text-decoration: none;
-  color: rgba(0, 0, 0, 0.5);
+  color: rgba(0, 0, 0, 0.4);
   font-family: MulishRegular;
   font-size: 18px;
   font-style: normal;
@@ -113,7 +106,6 @@ body {
 }
 
 .firstSection {
-  /* border: 1px solid black; */
   display: inline-flex;
   color: #000;
   align-items: center;
@@ -122,25 +114,22 @@ body {
   gap: 10em;
 }
 
-.firstSectionContent {
-}
-
 .firstSectionTitle {
   color: #000;
   font-family: "MulishRegular";
   font-size: 48px;
   font-style: normal;
   font-weight: 700;
-  line-height: 56px; /* 116.667% */
+  line-height: 56px;
 }
 
 .firstSectionSubtitle {
   color: #7d7987;
-  font-family: "MulishRegular";
+  font-family: "MulishExtraLight";
   font-size: 21px;
   font-style: normal;
   font-weight: 300;
-  line-height: 32px; /* 152.381% */
+  line-height: 32px;
 }
 
 .firstSectionBtn {
@@ -152,11 +141,10 @@ body {
   font-family: "MulishRegular";
   border: 0px;
   color: #fff;
-  font-family: Mulish;
   font-size: 18px;
   font-style: normal;
   font-weight: 700;
-  line-height: 60px; /* 333.333% */
+  line-height: 54px;
 }
 
 .firstSectionImage {
@@ -176,14 +164,14 @@ body {
   font-size: 36px;
   font-style: normal;
   font-weight: 700;
-  line-height: 56px; /* 155.556% */
+  line-height: 56px;
   margin-block: 0;
 }
 
 .secondSectionSubtitle {
   color: #7d7987;
   text-align: center;
-  font-family: "MulishLight";
+  font-family: "MulishExtraLight";
   font-size: 18px;
   font-style: normal;
   font-weight: 300;
@@ -212,8 +200,6 @@ body {
   padding: 50px 37px;
   border-radius: 20px;
   background: #fff;
-  /* border: 1px solid black; */
-  /* drop shadow */
   box-shadow: 10px 40px 50px 0px rgba(229, 233, 246, 0.4);
 }
 
@@ -235,16 +221,14 @@ body {
 
 .serviceCardSubtitle {
   color: #7d7987;
-  font-family: "MulishLight";
+  font-family: "MulishExtraLight";
   font-size: 16px;
   font-style: normal;
   font-weight: 300;
   margin-block: 0px;
-  /* line-height: 28px; */
 }
 
 .thirdSection {
-  /* border: 1px solid black; */
   display: inline-flex;
   color: #000;
   align-items: center;
@@ -254,7 +238,7 @@ body {
 
 .thirdSectionContent {
   width: 50%;
-  margin-inline: 10em;
+  margin-left: 10em;
 }
 
 .thirdSectionTitle {
@@ -268,7 +252,7 @@ body {
 
 .thirdSectionSubtitle {
   color: #7d7987;
-  font-family: "MulishLight";
+  font-family: "MulishExtraLight";
   font-size: 21px;
   font-style: normal;
   font-weight: 300;
@@ -286,7 +270,7 @@ body {
   font-size: 18px;
   font-style: normal;
   font-weight: 700;
-  line-height: 60px; /* 333.333% */
+  line-height: 54px;
   border: 1.4px solid #458ff6;
 }
 
@@ -295,7 +279,6 @@ body {
 }
 
 .fourthSection {
-  /* border: 1px solid black; */
   display: inline-flex;
   color: #000;
   align-items: center;
@@ -305,7 +288,8 @@ body {
 
 .fourthSectionContent {
   width: 50%;
-  margin-inline: 10em;
+  margin-right: 10%;
+  margin-left: 8%;
 }
 
 .fourthSectionTitle {
@@ -314,16 +298,16 @@ body {
   font-size: 48px;
   font-style: normal;
   font-weight: 700;
-  line-height: 56px; /* 116.667% */
+  line-height: 56px;
 }
 
 .fourthSectionSubtitle {
   color: #7d7987;
-  font-family: "MulishLight";
+  font-family: "MulishExtraLight";
   font-size: 21px;
   font-style: normal;
   font-weight: 300;
-  line-height: 32px; /* 152.381% */
+  line-height: 32px;
 }
 
 .fourthSectionBtn {
@@ -337,7 +321,7 @@ body {
   font-size: 18px;
   font-style: normal;
   font-weight: 700;
-  line-height: 60px; /* 333.333% */
+  line-height: 54px;
   border: 1.4px solid #458ff6;
 }
 
@@ -396,7 +380,6 @@ body {
   display: flex;
   flex-direction: row;
   align-items: center;
-  /* border: 1px solid black; */
 }
 
 .userInfo {
@@ -432,27 +415,27 @@ body {
   font-size: 22px;
   font-style: normal;
   font-weight: 700;
-  line-height: 35px; /* 218.182% */
+  line-height: 35px;
 }
 
 .userPosition {
   margin-block: 0px;
   color: rgba(255, 255, 255, 0.85);
-  font-family: "MulishLight";
+  font-family: "MulishExtraLight";
   font-size: 18px;
   font-style: normal;
   font-weight: 400;
-  line-height: 30px; /* 266.667% */
+  line-height: 30px;
 }
 
 .slideReview {
   width: 50%;
   color: rgba(255, 255, 255, 0.9);
-  font-family: "MulishLight";
+  font-family: "MulishExtraLight";
   font-size: 19px;
   font-style: normal;
   font-weight: 400;
-  line-height: 30px; /* 157.895% */
+  line-height: 30px;
 }
 
 .pager {
@@ -471,30 +454,26 @@ body {
   width: 35%;
 }
 
-/* Стили для точек в пейджере */
 .pageDot {
   width: 10px;
   height: 10px;
   border-radius: 50%;
-  background-color: rgba(91, 155, 243, 0.4); /* Цвет неактивных точек */
-  margin: 0 5px; /* Примерный горизонтальный отступ между точками */
+  background-color: rgba(91, 155, 243, 0.4);
+  margin: 0 5px;
   cursor: pointer;
-  transition: background-color 0.3s ease; /* Плавное изменение цвета */
+  transition: background-color 0.3s ease;
 }
 
-/* Стили для активной точки в пейджере */
 .pageDot.active {
-  background-color: #5b9bf3; /* Цвет активной точки */
+  background-color: #5b9bf3;
 }
 
 .arrowPager {
-  /* width: 2em; */
   background-color: white;
   border: 0;
 }
 
 .arrowCornerPosition {
-  /* width: 2em; */
   background-color: white;
   border: 0;
   color: rgba(91, 155, 243, 0.4);
@@ -522,7 +501,6 @@ body {
   height: 500px;
   border-radius: 20px;
   background: #fff;
-  /* drop shadow */
   box-shadow: 10px 40px 50px 0px rgba(229, 233, 246, 0.4);
   overflow: hidden;
 }
@@ -557,7 +535,7 @@ body {
   font-size: 21px;
   font-style: normal;
   font-weight: 700;
-  line-height: 32px; /* 152.381% */
+  line-height: 32px;
 }
 
 .articleCardSubtitle {
@@ -566,7 +544,7 @@ body {
   font-size: 16px;
   font-style: normal;
   font-weight: 300;
-  line-height: 28px; /* 175% */
+  line-height: 28px;
 }
 
 .readMoreBtn {
@@ -577,7 +555,7 @@ body {
   font-size: 17px;
   font-style: normal;
   font-weight: 600;
-  line-height: 28px; /* 164.706% */
+  line-height: 28px;
 }
 
 .readMoreArrow {
@@ -595,16 +573,15 @@ body {
   font-size: 18px;
   font-style: normal;
   font-weight: 700;
-  line-height: 60px; /* 333.333% */
+  line-height: 54px;
   border: 1.4px solid #458ff6;
 }
 
 footer {
   background: linear-gradient(183deg, #67c3f3 -8.57%, #5a98f2 82.96%);
-  /* width: 1600px; */
   margin-top: 50em;
   flex-shrink: 0;
-  padding: 115px 180px;
+  padding: 100px 180px;
 }
 
 .footerContent {
@@ -659,7 +636,7 @@ footer {
   font-size: 18px;
   font-style: normal;
   font-weight: 300;
-  line-height: 28px; /* 155.556% */
+  line-height: 28px;
 }
 
 .rightReserved {
@@ -668,7 +645,7 @@ footer {
   font-size: 16px;
   font-style: normal;
   font-weight: 300;
-  line-height: 28px; /* 175% */
+  line-height: 28px;
 }
 
 .footerNavMenu {
@@ -682,7 +659,7 @@ footer {
   font-size: 20px;
   font-style: normal;
   font-weight: 700;
-  line-height: 60px; /* 300% */
+  line-height: 60px;
 }
 
 .footerNavItem {
@@ -692,5 +669,5 @@ footer {
   font-size: 18px;
   font-style: normal;
   font-weight: 300;
-  line-height: 35px; /* 211.111% */
+  line-height: 35px;
 }

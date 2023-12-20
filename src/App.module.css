@@ -8,6 +8,11 @@
   src: url("./fonts/MulishLight.ttf");
 }
 
+@font-face {
+  font-family: "MulishExtraLight";
+  src: url("./fonts/MulishExtraLight.ttf");
+}
+
 #root {
   background-color: aliceblue;
 }
@@ -347,8 +352,10 @@ body {
 }
 
 .fiveSection {
-  justify-content: center;
+  align-items: center;
   display: flex;
+  flex-direction: column;
+  width: 100%;
 }
 
 .slide {
@@ -448,6 +455,51 @@ body {
   line-height: 30px; /* 157.895% */
 }
 
+.pager {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 3%;
+  width: 25%;
+  justify-content: space-between;
+}
+
+.dotsList {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 35%;
+}
+
+/* Стили для точек в пейджере */
+.pageDot {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: rgba(91, 155, 243, 0.4); /* Цвет неактивных точек */
+  margin: 0 5px; /* Примерный горизонтальный отступ между точками */
+  cursor: pointer;
+  transition: background-color 0.3s ease; /* Плавное изменение цвета */
+}
+
+/* Стили для активной точки в пейджере */
+.pageDot.active {
+  background-color: #5b9bf3; /* Цвет активной точки */
+}
+
+.arrowPager {
+  /* width: 2em; */
+  background-color: white;
+  border: 0;
+}
+
+.arrowCornerPosition {
+  /* width: 2em; */
+  background-color: white;
+  border: 0;
+  color: rgba(91, 155, 243, 0.4);
+}
+
 .sixSection {
   justify-items: center;
   display: inherit;
@@ -489,6 +541,10 @@ body {
 }
 
 .articleCardContent {
+  height: 53%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
 .articleCardText {
@@ -506,7 +562,7 @@ body {
 
 .articleCardSubtitle {
   color: #7d7987;
-  font-family: "MulishLight";
+  font-family: "MulishExtraLight";
   font-size: 16px;
   font-style: normal;
   font-weight: 300;
@@ -599,23 +655,20 @@ footer {
 
 .describtionCompany {
   color: #fff;
-  font-family: "MulishLight";
+  font-family: "MulishExtraLight";
   font-size: 18px;
   font-style: normal;
   font-weight: 300;
   line-height: 28px; /* 155.556% */
 }
 
-.rightResrved {
+.rightReserved {
   color: #fff;
-  font-family: "MulishLight";
+  font-family: "MulishExtraLight";
   font-size: 16px;
   font-style: normal;
   font-weight: 300;
   line-height: 28px; /* 175% */
-}
-
-.footerCompanyNavBlock {
 }
 
 .footerNavMenu {
@@ -635,45 +688,9 @@ footer {
 .footerNavItem {
   text-decoration: none;
   color: #fff;
-  font-family: "MulishLight";
+  font-family: "MulishExtraLight";
   font-size: 18px;
   font-style: normal;
   font-weight: 300;
   line-height: 35px; /* 211.111% */
 }
-
-/* .logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
-}
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
-}
-.logo.react:hover {
-  filter: drop-shadow(0 0 2em #61dafbaa);
-}
-
-@keyframes logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  a:nth-of-type(2) .logo {
-    animation: logo-spin infinite 20s linear;
-  }
-}
-
-.card {
-  padding: 2em;
-}
-
-.read-the-docs {
-  color: #888;
-} */

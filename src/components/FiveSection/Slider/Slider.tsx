@@ -13,22 +13,24 @@ const slidesData = [
   },
   {
     avatar: userAvatar,
-    userName: "UserName",
-    userPosition: "Position",
-    userReview: "text review",
-  },
-  {
-    avatar: userAvatar,
-    userName: "Edward Newgate",
-    userPosition: "Founder Circle",
+    userName: "John Johnson",
+    userPosition: "CEO 2Circle",
     userReview:
-      "“Our dedicated patient engagement app and web portal allow you to access information instantaneously (no tedeous form, long calls, or administrative hassle) and securely”",
+      '"Diverse and rich experience and staff training space ensures the preparation and implementation of additional components of the optional update!"',
   },
   {
     avatar: userAvatar,
-    userName: "UserName",
-    userPosition: "Position",
-    userReview: "text review",
+    userName: "Edward Handcut",
+    userPosition: "CFO 3Circle",
+    userReview:
+      '"On the other hand, constant information and technical support for our activities helps to increase the relevance of the development model."',
+  },
+  {
+    avatar: userAvatar,
+    userName: "Paul Wotson",
+    userPosition: "Top manager",
+    userReview:
+      '"The task of the organization, especially the innovative path we have chosen, requires us to systematically analyze the economic feasibility of the decisions made."',
   },
 ];
 

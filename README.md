@@ -6,7 +6,7 @@ A new my educational React project
 
 ## Экраны приложения
 
-![Скриншот экрана](/public/screenshot.png)
+![Скриншот экрана](/src/assets/screenshot.png)
 
 ## Требования для запуска
 

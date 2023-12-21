@@ -1,7 +1,6 @@
 import classes from "./App.module.css";
 import clsx from "clsx";
 
-import sky from "./assets/svgs/sky.svg";
 import pointMatrix from "./assets/svgs/pointMatrix.svg";
 
 import Header from "./components/Header/index";
@@ -23,10 +22,6 @@ function App() {
             classes.backgroundImage,
             classes.firstSectionBGMatrix
           )}
-        />
-        <img
-          src={sky}
-          className={clsx(classes.backgroundImage, classes.secondSectionBGSky)}
         />
 
         <div className={classes.mainDiv}>

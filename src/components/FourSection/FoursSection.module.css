@@ -72,3 +72,25 @@
 .fourthSectionImage {
   width: 60%;
 }
+
+@media screen and (max-width: 1000px) {
+  .fourthSection {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    gap: 5em;
+    margin-top: 5%;
+    margin-bottom: 15%;
+  }
+
+  .fourthSectionImage {
+    width: 80%;
+  }
+
+  .fourthSectionContent {
+    width: 90%;
+    margin-right: 0%;
+    margin-left: 0%;
+  }
+}

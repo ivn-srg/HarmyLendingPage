@@ -77,3 +77,23 @@
   width: 10%;
   margin-top: 12%;
 }
+
+@media screen and (max-width: 1000px) {
+  .thirdSection {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    gap: 5em;
+    margin-bottom: 10%;
+  }
+
+  .thirdSectionImage {
+    width: 80%;
+  }
+
+  .thirdSectionContent {
+    width: 90%;
+    margin-left: 0;
+  }
+}

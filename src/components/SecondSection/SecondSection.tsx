@@ -4,10 +4,15 @@ import ServiceCard from "./ServiceCard/index";
 import clsx from "clsx";
 
 import pointMatrix from "../../assets/svgs/pointMatrix.svg";
+import sky from "../../assets/svgs/sky.svg";
 
 const SecondSection = () => {
   return (
     <div className={classes.secondSection}>
+      <img
+        src={sky}
+        className={clsx(classes.backgroundImage, classes.secondSectionBGSky)}
+      />
       <h1 className={classes.secondSectionTitle}>Our services</h1>
       <div className={classes.delimeter}></div>
       <p className={classes.secondSectionSubtitle}>

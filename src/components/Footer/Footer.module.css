@@ -1,0 +1,113 @@
+footer {
+  background: linear-gradient(183deg, #67c3f3 -8.57%, #5a98f2 82.96%);
+  flex-shrink: 0;
+  padding: 100px 180px;
+  overflow: hidden;
+}
+
+.footerContent {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.footerCompanyInfo {
+  width: 30%;
+}
+
+.footerlogoDiv {
+  display: inline-flex;
+  align-items: center;
+}
+
+.footerLogo {
+  align-items: center;
+  border-radius: 50%;
+  justify-content: center;
+  background-color: #fff;
+  width: 41px;
+  height: 41px;
+  display: inherit;
+  margin-right: 1em;
+}
+
+.footerLogoSymbol {
+  text-align: center;
+  color: #5b9bf3;
+  font-family: "MulishRegular";
+  font-size: 26px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  display: inline;
+}
+
+.footerLogoText {
+  color: #fff;
+  font-family: "MulishRegular";
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+
+.describtionCompany {
+  color: #fff;
+  font-family: "MulishExtraLight";
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: 28px;
+}
+
+.rightReserved {
+  color: #fff;
+  font-family: "MulishExtraLight";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: 28px;
+}
+
+.footerNavMenu {
+  display: flex;
+  flex-direction: column;
+}
+
+.footerBlockTitle {
+  color: #fff;
+  font-family: "MulishRegular";
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 60px;
+}
+
+.footerNavItem {
+  text-decoration: none;
+  color: #fff;
+  font-family: "MulishExtraLight";
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: 35px;
+}
+
+.backgroundImage {
+  position: absolute;
+  object-fit: cover;
+  z-index: -1;
+  overflow: hidden;
+}
+
+.footerBGMatrix1 {
+  left: -1%;
+  margin-top: 14%;
+  z-index: 0;
+}
+
+.footerBGMatrix2 {
+  right: 5%;
+  margin-top: -11%;
+  width: 10%;
+}

@@ -15,7 +15,7 @@
   align-items: center;
   border-radius: 50%;
   justify-content: center;
-  background-color: (--main-color);
+  background-color: var(--main-color);
   width: 41px;
   height: 41px;
   font-family: "MulishRegular";
@@ -35,7 +35,7 @@
 }
 
 .logoText {
-  color: (--title-color);
+  color: var(--title-color);
   font-family: "MulishRegular";
   font-size: 24px;
   font-style: normal;
@@ -49,7 +49,7 @@
 
 .selectedNavItem {
   font-weight: 700;
-  color: (--title-color);
+  color: var(--title-color);
   text-decoration: none;
   background-color: none;
   font-family: "MulishRegular";
@@ -62,7 +62,7 @@
 .navItem {
   padding-left: 2em;
   text-decoration: none;
-  color: (--unselected-navitem);
+  color: var(--unselected-navitem);
   font-family: "MulishRegular";
   font-size: 18px;
   font-style: normal;

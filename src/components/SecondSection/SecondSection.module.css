@@ -7,7 +7,7 @@
 
 .secondSectionTitle {
   text-align: center;
-  color: (--title-color);
+  color: var(--title-color);
   font-family: "MulishRegular";
   font-size: 36px;
   font-style: normal;
@@ -17,7 +17,7 @@
 }
 
 .secondSectionSubtitle {
-  color: (--subtitle-color);
+  color: var(--subtitle-color);
   text-align: center;
   font-family: "MulishExtraLight";
   font-size: 18px;
@@ -48,7 +48,7 @@
   height: 2px;
   flex-shrink: 0;
   border-radius: 5px;
-  background: (--delimeter-color);
+  background: var(--delimeter-color);
 }
 
 .thirdSectionBtn {
@@ -57,11 +57,11 @@
   height: 56px;
   border-radius: 55px;
   background: #fff;
-  color: (--main-color);
+  color: var(--main-color);
   font-family: "MulishRegular";
   font-size: 18px;
   font-style: normal;
   font-weight: 700;
   line-height: 54px;
-  border: 1.4px solid (--main-color);
+  border: 1.4px solid var(--main-color);
 }

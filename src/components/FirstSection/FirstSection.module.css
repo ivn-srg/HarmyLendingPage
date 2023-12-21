@@ -9,7 +9,7 @@
 }
 
 .firstSectionTitle {
-  color: (--title-color);
+  color: var(--title-color);
   font-family: "MulishRegular";
   font-size: 48px;
   font-style: normal;
@@ -18,7 +18,7 @@
 }
 
 .firstSectionSubtitle {
-  color: (--subtitle-color);
+  color: var(--subtitle-color);
   font-family: "MulishExtraLight";
   font-size: 21px;
   font-style: normal;
@@ -31,7 +31,7 @@
   width: 200px;
   height: 56px;
   border-radius: 55px;
-  background: (--main-color);
+  background: var(--main-color);
   font-family: "MulishRegular";
   border: 0px;
   color: #fff;

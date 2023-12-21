@@ -7,7 +7,7 @@
 
 .sixSectionTitle {
   text-align: center;
-  color: (--title-color);
+  color: var(--title-color);
   font-family: "MulishRegular";
   font-size: 36px;
   font-style: normal;
@@ -41,5 +41,5 @@
   height: 2px;
   flex-shrink: 0;
   border-radius: 5px;
-  background: (--delimeter-color);
+  background: var(--delimeter-color);
 }

@@ -20,10 +20,12 @@
   --logo-text-color: #233348;
   --subtitle-color: #7d7987;
   --unselected-navitem: rgba(0, 0, 0, 0.4);
+  --btn-bg-color: white;
   --title-color: #000;
   --delimeter-color: #000;
   --card-bg-color: white;
   --card-shadow-color: rgba(229, 233, 246, 0.4);
+  --slider-content-color: white;
   --slider-username-color: white;
   --slider-userposition-color: rgba(255, 255, 255, 0.85);
   --slider-review-color: rgba(255, 255, 255, 0.9);

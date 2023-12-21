@@ -11,7 +11,11 @@
   height: 350px;
   width: 65%;
   border-radius: 24px;
-  background: linear-gradient(208deg, #67c3f3 9.05%, #5a98f2 76.74%);
+  background: linear-gradient(
+    208deg,
+    (--third-color) 9.05%,
+    (--second-color) 76.74%
+  );
 }
 
 .sliderTitle {
@@ -31,7 +35,7 @@
   height: 2px;
   flex-shrink: 0;
   border-radius: 5px;
-  background: #fff;
+  background: white;
   display: inline-block;
   margin-block: 0;
 }
@@ -73,7 +77,7 @@
 
 .userName {
   margin-block: 0px;
-  color: #fff;
+  color: (--slider-username-color);
   font-family: "MulishRegular";
   font-size: 22px;
   font-style: normal;
@@ -83,7 +87,7 @@
 
 .userPosition {
   margin-block: 0px;
-  color: rgba(255, 255, 255, 0.85);
+  color: (--slider-userposition-color);
   font-family: "MulishExtraLight";
   font-size: 18px;
   font-style: normal;
@@ -93,7 +97,7 @@
 
 .slideReview {
   width: 50%;
-  color: rgba(255, 255, 255, 0.9);
+  color: (--slider-review-color);
   font-family: "MulishExtraLight";
   font-size: 19px;
   font-style: normal;
@@ -121,25 +125,25 @@
   width: 10px;
   height: 10px;
   border-radius: 50%;
-  background-color: rgba(91, 155, 243, 0.4);
+  background-color: (--pager-unactive-color);
   margin: 0 5px;
   cursor: pointer;
   transition: background-color 0.3s ease;
 }
 
 .pageDot.active {
-  background-color: #5b9bf3;
+  background-color: (--second-color);
 }
 
 .arrowPager {
-  background-color: white;
+  background-color: (--pager-bg-color);
   border: 0;
 }
 
 .arrowCornerPosition {
-  background-color: white;
+  background-color: (--pager-bg-color);
   border: 0;
-  color: rgba(91, 155, 243, 0.4);
+  color: (--pager-unactive-color);
 }
 
 .thirdSectionBtn {
@@ -148,13 +152,13 @@
   height: 56px;
   border-radius: 55px;
   background: #fff;
-  color: #458ff6;
+  color: (--main-color);
   font-family: "MulishRegular";
   font-size: 18px;
   font-style: normal;
   font-weight: 700;
   line-height: 54px;
-  border: 1.4px solid #458ff6;
+  border: 1.4px solid (--main-color);
 }
 
 .backgroundImage {

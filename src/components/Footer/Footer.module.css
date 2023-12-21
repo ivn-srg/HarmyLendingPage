@@ -1,5 +1,9 @@
 footer {
-  background: linear-gradient(183deg, #67c3f3 -8.57%, #5a98f2 82.96%);
+  background: linear-gradient(
+    183deg,
+    (--third-color) -8.57%,
+    (--second-color) 82.96%
+  );
   flex-shrink: 0;
   padding: 100px 180px;
   overflow: hidden;
@@ -24,7 +28,7 @@ footer {
   align-items: center;
   border-radius: 50%;
   justify-content: center;
-  background-color: #fff;
+  background-color: (--logo-text-color);
   width: 41px;
   height: 41px;
   display: inherit;
@@ -33,7 +37,7 @@ footer {
 
 .footerLogoSymbol {
   text-align: center;
-  color: #5b9bf3;
+  color: (--second-color);
   font-family: "MulishRegular";
   font-size: 26px;
   font-style: normal;
@@ -43,7 +47,7 @@ footer {
 }
 
 .footerLogoText {
-  color: #fff;
+  color: (--logo-text-color);
   font-family: "MulishRegular";
   font-size: 24px;
   font-style: normal;
@@ -52,7 +56,7 @@ footer {
 }
 
 .describtionCompany {
-  color: #fff;
+  color: (--logo-text-color);
   font-family: "MulishExtraLight";
   font-size: 18px;
   font-style: normal;
@@ -61,7 +65,7 @@ footer {
 }
 
 .rightReserved {
-  color: #fff;
+  color: (--logo-text-color);
   font-family: "MulishExtraLight";
   font-size: 16px;
   font-style: normal;
@@ -75,7 +79,7 @@ footer {
 }
 
 .footerBlockTitle {
-  color: #fff;
+  color: (--logo-text-color);
   font-family: "MulishRegular";
   font-size: 20px;
   font-style: normal;
@@ -85,7 +89,7 @@ footer {
 
 .footerNavItem {
   text-decoration: none;
-  color: #fff;
+  color: (--logo-text-color);
   font-family: "MulishExtraLight";
   font-size: 18px;
   font-style: normal;

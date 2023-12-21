@@ -1,6 +1,5 @@
 .thirdSection {
   display: inline-flex;
-  color: #000;
   align-items: center;
   justify-content: space-between;
   width: 100%;
@@ -18,11 +17,11 @@
   height: 2px;
   flex-shrink: 0;
   border-radius: 5px;
-  background: #000;
+  background: (--delimeter-color);
 }
 
 .thirdSectionTitle {
-  color: #000;
+  color: (--title-color);
   font-family: "MulishRegular";
   font-size: 48px;
   font-style: normal;
@@ -31,7 +30,7 @@
 }
 
 .thirdSectionSubtitle {
-  color: #7d7987;
+  color: (--subtitle-color);
   font-family: "MulishExtraLight";
   font-size: 21px;
   font-style: normal;
@@ -48,14 +47,14 @@
   width: 200px;
   height: 56px;
   border-radius: 55px;
-  background: #fff;
-  color: #458ff6;
+  background: white;
+  color: (--main-color);
   font-family: "MulishRegular";
   font-size: 18px;
   font-style: normal;
   font-weight: 700;
   line-height: 54px;
-  border: 1.4px solid #458ff6;
+  border: 1.4px solid (--main-color);
 }
 
 .backgroundImage {

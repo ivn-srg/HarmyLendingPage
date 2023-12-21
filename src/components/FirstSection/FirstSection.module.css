@@ -34,11 +34,19 @@
   background: var(--main-color);
   font-family: "MulishRegular";
   border: 0px;
-  color: #fff;
+  color: white;
   font-size: 18px;
   font-style: normal;
   font-weight: 700;
   line-height: 54px;
+}
+
+.firstSectionBtn:hover {
+  background-color: var(--second-color);
+}
+
+.firstSectionBtn:active {
+  background-color: var(--third-color);
 }
 
 .firstSectionImage {

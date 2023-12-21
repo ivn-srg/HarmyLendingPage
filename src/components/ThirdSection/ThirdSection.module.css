@@ -57,6 +57,15 @@
   border: 1.4px solid var(--main-color);
 }
 
+.thirdSectionBtn:hover {
+  border: 3px solid var(--second-color);
+}
+
+.thirdSectionBtn:active {
+  border: 3px solid var(--third-color);
+  color: var(--third-color);
+}
+
 .backgroundImage {
   position: absolute;
   object-fit: cover;

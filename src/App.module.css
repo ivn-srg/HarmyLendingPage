@@ -13,27 +13,6 @@
   src: url("./fonts/MulishExtraLight.ttf");
 }
 
-:root {
-  --main-color: #458ff6;
-  --second-color: #5a98f2;
-  --third-color: #67c3f3;
-  --logo-text-color: #233348;
-  --subtitle-color: #7d7987;
-  --unselected-navitem: rgba(0, 0, 0, 0.4);
-  --btn-bg-color: white;
-  --title-color: #000;
-  --delimeter-color: #000;
-  --card-bg-color: white;
-  --card-shadow-color: rgba(229, 233, 246, 0.4);
-  --slider-content-color: white;
-  --slider-username-color: white;
-  --slider-userposition-color: rgba(255, 255, 255, 0.85);
-  --slider-review-color: rgba(255, 255, 255, 0.9);
-  --pager-unactive-color: rgba(91, 155, 243, 0.4);
-  --pager-bg-color: white;
-  --logo-text-color: white;
-}
-
 body {
   width: 100%;
   align-content: center;

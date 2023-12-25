@@ -1,0 +1,71 @@
+.header {
+  display: inline-flex;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+  align-self: center;
+}
+
+.logoDiv {
+  display: inline-flex;
+  align-items: center;
+}
+
+.logo {
+  align-items: center;
+  border-radius: 50%;
+  justify-content: center;
+  background-color: var(--main-color);
+  width: 41px;
+  height: 41px;
+  font-family: "MulishRegular";
+  display: inherit;
+  margin-right: 1em;
+}
+
+.logoSymbol {
+  text-align: center;
+  color: white;
+  font-family: "MulishRegular";
+  font-size: 26px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  display: inline;
+}
+
+.logoText {
+  color: var(--title-color);
+  font-family: "MulishRegular";
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+
+.navMenu {
+  justify-content: space-between;
+}
+
+.selectedNavItem {
+  font-weight: 700;
+  color: var(--title-color);
+  text-decoration: none;
+  background-color: none;
+  font-family: "MulishRegular";
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.navItem {
+  padding-left: 2em;
+  text-decoration: none;
+  color: var(--unselected-navitem);
+  font-family: "MulishRegular";
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}

@@ -1,0 +1,105 @@
+.cardGrid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(20em, 1fr));
+  gap: 40px;
+  margin-bottom: 2%;
+}
+
+.articleCard {
+  width: 320px;
+  height: 500px;
+  border-radius: 20px;
+  background: var(--card-bg-color);
+  box-shadow: 10px 40px 50px 0px var(--card-shadow-color);
+  overflow: hidden;
+}
+
+.articleImage {
+  width: 100%;
+  height: 40%;
+}
+
+.articleCardGridContainer {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  margin: 3% 0px;
+}
+
+.articleCardContent {
+  height: 53%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.articleCardText {
+  margin: 0px 33px;
+}
+
+.articleCardTitle {
+  color: var(--title-color);
+  font-family: "MulishRegular";
+  font-size: 21px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 32px;
+}
+
+.articleCardSubtitle {
+  color: var(--subtitle-color);
+  font-family: "MulishExtraLight";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: 28px;
+}
+
+.readMoreBtn {
+  margin: 0px 33px;
+  text-decoration: none;
+  color: var(--second-color);
+  font-family: "MulishRegular";
+  font-size: 17px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 28px;
+}
+
+.readMoreArrow {
+  margin-inline: 2%;
+}
+
+.showMoreBtn {
+  margin-top: 6%;
+  width: 200px;
+  height: 56px;
+  border-radius: 55px;
+  background: #fff;
+  color: var(--main-color);
+  font-family: "MulishRegular";
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 54px;
+  border: 1.4px solid var(--main-color);
+}
+
+.showMoreBtn:hover {
+  border: 3px solid var(--second-color);
+}
+
+.showMoreBtn:active {
+  border: 3px solid var(--third-color);
+  color: var(--third-color);
+}
+
+@media screen and (max-width: 1200px) {
+  .cardGrid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 40px;
+    margin-bottom: 2%;
+  }
+}

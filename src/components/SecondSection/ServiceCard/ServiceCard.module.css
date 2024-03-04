@@ -1,0 +1,66 @@
+.cardGrid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(20em, 1fr));
+  gap: 40px;
+  margin-bottom: 2%;
+}
+
+.card {
+  padding: 50px 37px;
+  border-radius: 20px;
+  background: var(--card-bg-color);
+  box-shadow: 10px 40px 50px 0px var(--card-shadow-color);
+}
+
+.icon {
+  width: 91px;
+  height: 91px;
+}
+
+.serviceCardTitle {
+  color: var(--title-color);
+  font-family: "MulishRegular";
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 700;
+  margin-block: 0px;
+  margin-top: 1em;
+  line-height: 56px;
+}
+
+.serviceCardSubtitle {
+  color: var(--subtitle-color);
+  font-family: "MulishExtraLight";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 300;
+  margin-block: 0px;
+}
+
+.backgroundImage {
+  position: absolute;
+  object-fit: cover;
+  z-index: -1;
+  overflow: hidden;
+}
+
+.secondSectionBGSky {
+  margin-top: 73%;
+  margin-left: -3%;
+  width: 50%;
+}
+
+.secondSectionBGMatrix {
+  right: 0px;
+  margin-top: 31em;
+  width: 10%;
+}
+
+@media screen and (max-width: 1200px) {
+  .cardGrid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 40px;
+    margin-bottom: 2%;
+  }
+}

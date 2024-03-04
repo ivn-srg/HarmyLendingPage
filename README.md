@@ -1,30 +1,29 @@
-# React + TypeScript + Vite
+# Harmy Lending Page
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A new my educational React project
 
-Currently, two official plugins are available:
+## Описание: Проект представляет из себя одностраничный сайт(лендинг) для продвижения компании HealthCare
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Экраны приложения
 
-## Expanding the ESLint configuration
+![Скриншот экрана](/src/assets/screenshot.png)
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+## Требования для запуска
 
-- Configure the top-level `parserOptions` property like this:
+### 1. Версия npm 10.2.3
 
-```js
-export default {
-  // other rules...
-  parserOptions: {
-    ecmaVersion: 'latest',
-    sourceType: 'module',
-    project: ['./tsconfig.json', './tsconfig.node.json'],
-    tsconfigRootDir: __dirname,
-  },
-}
-```
+### 2. Версия NodeJS 20.10.0
 
-- Replace `plugin:@typescript-eslint/recommended` to `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`
-- Optionally add `plugin:@typescript-eslint/stylistic-type-checked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
+### 3. Тестировалось на ширине экран 1600px и устройстве ipad air
+
+### 3. Версия Typescript 5.2.2
+
+### 4. Версия Vite 5.0.8
+
+## Связь
+
+[Telegram](https://t.me/ivn_srg)
+
+## Автор
+
+Иванов Сергей 2023

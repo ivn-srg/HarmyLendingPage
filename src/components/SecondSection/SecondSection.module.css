@@ -1,0 +1,82 @@
+.secondSection {
+  justify-items: center;
+  display: inherit;
+  margin: 1% 5%;
+  margin-bottom: 15%;
+}
+
+.secondSectionTitle {
+  text-align: center;
+  color: var(--title-color);
+  font-family: "MulishRegular";
+  font-size: 36px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 56px;
+  margin-block: 0;
+}
+
+.secondSectionSubtitle {
+  color: var(--subtitle-color);
+  text-align: center;
+  font-family: "MulishExtraLight";
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: 30px;
+  margin-block: 0;
+  margin-bottom: 5%;
+  margin-inline: 7%;
+}
+
+.backgroundImage {
+  position: absolute;
+  object-fit: cover;
+  z-index: -1;
+  overflow: hidden;
+}
+
+.secondSectionBGMatrix {
+  right: 0px;
+  margin-top: 32em;
+  width: 10%;
+}
+
+.delimeter {
+  margin: 2% 0%;
+  width: 56px;
+  height: 2px;
+  flex-shrink: 0;
+  border-radius: 5px;
+  background: var(--delimeter-color);
+}
+
+.thirdSectionBtn {
+  margin-top: 50px;
+  width: 200px;
+  height: 56px;
+  border-radius: 55px;
+  background: #fff;
+  color: var(--main-color);
+  font-family: "MulishRegular";
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 50px;
+  border: 1.4px solid var(--main-color);
+}
+
+.thirdSectionBtn:hover {
+  border: 3px solid var(--second-color);
+}
+
+.thirdSectionBtn:active {
+  border: 3px solid var(--third-color);
+  color: var(--third-color);
+}
+
+.secondSectionBGSky {
+  margin-top: 15%;
+  margin-left: -71%;
+  width: 55%;
+}

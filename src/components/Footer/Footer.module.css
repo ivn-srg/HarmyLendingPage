@@ -1,0 +1,129 @@
+footer {
+  background: linear-gradient(
+    183deg,
+    var(--third-color) -8.57%,
+    var(--second-color) 82.96%
+  );
+  flex-shrink: 0;
+  padding: 100px 180px;
+  overflow: hidden;
+}
+
+.footerContent {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.footerCompanyInfo {
+  width: 30%;
+}
+
+.footerlogoDiv {
+  display: inline-flex;
+  align-items: center;
+}
+
+.footerLogo {
+  align-items: center;
+  border-radius: 50%;
+  justify-content: center;
+  background-color: var(--logo-text-color);
+  width: 41px;
+  height: 41px;
+  display: inherit;
+  margin-right: 1em;
+}
+
+.footerLogoSymbol {
+  text-align: center;
+  color: var(--second-color);
+  font-family: "MulishRegular";
+  font-size: 26px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  display: inline;
+}
+
+.footerLogoText {
+  color: var(--logo-text-color);
+  font-family: "MulishRegular";
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+
+.describtionCompany {
+  color: var(--logo-text-color);
+  font-family: "MulishExtraLight";
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: 28px;
+}
+
+.rightReserved {
+  color: var(--logo-text-color);
+  font-family: "MulishExtraLight";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: 28px;
+}
+
+.footerNavMenu {
+  display: flex;
+  flex-direction: column;
+}
+
+.footerBlockTitle {
+  color: var(--logo-text-color);
+  font-family: "MulishRegular";
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 60px;
+}
+
+.footerNavItem {
+  text-decoration: none;
+  color: var(--logo-text-color);
+  font-family: "MulishExtraLight";
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: 35px;
+}
+
+.backgroundImage {
+  position: absolute;
+  object-fit: cover;
+  z-index: -1;
+  overflow: hidden;
+}
+
+.footerBGMatrix1 {
+  left: -1%;
+  margin-top: 14%;
+  z-index: 0;
+}
+
+.footerBGMatrix2 {
+  right: 5%;
+  margin-top: -11%;
+  width: 10%;
+}
+
+@media screen and (max-width: 1000px) {
+  .footerContent {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  .footerCompanyInfo {
+    width: 100%;
+  }
+}
